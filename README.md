@@ -2,15 +2,11 @@
 
 ## HOW TO RUN
 
-cd .\server\
+    cd .\server\
+    npm install
+    npm start
+    
+    cd ..\client\ 
+    npm install
+    npm start 
 
-npm install
-
-npm start
-
-
-cd ..\client\ 
-
-npm install
-
-npm start    
