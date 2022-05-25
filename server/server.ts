@@ -2,7 +2,7 @@ import express from "express";
 import db from "./database";
 import ResponseObj from "./utils";
 const app: express.Express = express();
-const PORT = 5000;
+const PORT = 9000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
