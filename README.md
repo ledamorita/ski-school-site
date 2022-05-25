@@ -2,11 +2,10 @@
 
 ## HOW TO RUN
 
-    cd .\server\
-    npm install
-    npm start
+### 1. change directory to client
+    npm install  
     
-    cd ..\client\ 
+### 2. change directory to server
     npm install
     npm start 
 
