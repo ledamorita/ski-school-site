@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm: React.FC = () => {
   const [data, setData] = useState({
@@ -7,6 +8,8 @@ const LoginForm: React.FC = () => {
     password: "",
   });
 
+  const navigate = useNavigate();
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setData({
       ...data,
@@ -31,8 +34,7 @@ const LoginForm: React.FC = () => {
         .then((res) => {
           if (res.status === 200) {
             if (res.data.code === 0) {
-              alert("login success");
-              window.location.href = "/booking";
+              navigate("/booking");
             } else {
               alert(res.data.msg);
             }
